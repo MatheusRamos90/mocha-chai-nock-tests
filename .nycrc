@@ -1,0 +1,22 @@
+{
+   "all": true,
+   "include": ["src/**/!(*.spec.*).[tj]s?(x)"],
+   "exclude": [
+      "src/__tests__",
+      "src/app/dto",
+      "src/app/index.ts",
+      "src/app/server.ts",
+      ".eslintrc.cjs",
+      "coverage"
+   ],
+   "check-coverage": true,
+   "lines": 90,
+   "extension": [".ts"],
+   "reporter": [
+       "html",
+       "text",
+       "lcov",
+       "text-summary"
+   ],
+   "report-dir": "coverage"
+}
